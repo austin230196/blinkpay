@@ -11,7 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#0955BB"
       },
+      screens: {
+        'xlg': '1245px'
+      }
     },
   },
   plugins: [],
