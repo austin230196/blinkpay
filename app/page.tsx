@@ -18,15 +18,15 @@ type IFaq = {
   answer: string
 }
 
-export default async function Home(){
-  const res = await fetch("http://localhost:3000/api/rate", {
-    method: "GET",
-    headers: {
-      // "Content-Type": "application/json"
-    }
-  })
-  // const data = await res.json();
-  console.log({res});
+export default function Home(){
+  // const res = await fetch("http://localhost:3000/api/rate", {
+  //   method: "GET",
+  //   headers: {
+  //     // "Content-Type": "application/json"
+  //   }
+  // })
+  // // const data = await res.json();
+  // console.log({res});
 
   return (
     <div className="min-h-screen w-full font-[family-name:var(--font-geist-sans)]">
