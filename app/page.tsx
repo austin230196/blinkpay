@@ -11,15 +11,7 @@ import Feature, { IFeature } from "@/components/Feature";
 import Step, { IStep } from "@/components/Step";
 import Footer from "@/components/Footer";
 
-{/* <Image
-className="dark:invert"
-src="/next.svg"
-alt="Next.js logo"
-width={180}
-height={38}
-priority
-/> */}
-// font-[family-name:var(--font-geist-sans)]
+
 
 type IFaq = {
   question: string;
@@ -39,9 +31,7 @@ export default async function Home(){
   return (
     <div className="min-h-screen w-full font-[family-name:var(--font-geist-sans)]">
       <Nav />
-      <div className="mt-20 w-full max-w-[1200px] mx-auto bg-[url('/blinkpay.jpg')] min-h-[700px] bg-cover bg-center">
-        {/* <div className="bg-gradient-to-b from-blue-500 to-blue-700 opacity-80"></div> */}
-      </div>
+      <div className="mt-20 w-full max-w-[1200px] mx-auto bg-[url('/blinkpay.jpg')] min-h-[700px] bg-cover bg-center" />
       <div className="w-full py-20 flex gap-10 items-center flex-col justify-center bg-gradient-to-b from-blue-500 to-blue-500/30 opacity-80">
         <p className="text-white text-xl font-bold py-2 px-8 bg-gray-900/20 w-full max-w-[1200px] text-center">Buy-rmb - Most secure and reliable way to pay suppliers in China and Turkey</p>
         <p className="text-white text-2xl font-bold w-full max-w-[1200px] text-center">Current rate: <span>0.42</span></p>
@@ -51,7 +41,7 @@ export default async function Home(){
       {/* FREQUENTLY ASKED QUESTIONS */}
       <div className="w-full max-w-[1200px] mx-auto grid lg:grid-cols-2 grid-cols-1 px-6 lg:px-0 gap-10 py-12">
         <div className="max-w-[600px] max-h-[600px]">
-          {/* <Image src="/faq-blinkpay.png" alt="faq-blinkpay" width={500} height={500} /> */}
+
           <Image
             src="/faq-blinkpay.png"
             alt="Description of the image"
@@ -63,7 +53,6 @@ export default async function Home(){
 
         <div className="flex flex-col gap-10 w-full">
           <h2 className="font-extrabold text-2xl">Frequently Asked Questions</h2>
-
           <div className="flex flex-col gap-2">
             {
               faqs.map((f, i) => (
@@ -73,7 +62,6 @@ export default async function Home(){
           </div>
         </div>
       </div>
-
 
       {/* FEATURES */}
       <div className="w-full mx-auto bg-[#F6FCFE] pt-20 pb-10">
@@ -87,7 +75,6 @@ export default async function Home(){
         </div>
       </div>
 
-
       {/* HOW IT WORKS */}
       <div className="w-full mx-auto bg-[#D9F2FF] pt-20 pb-10">
         <div className="w-full flex flex-col gap-10">
@@ -99,14 +86,12 @@ export default async function Home(){
           </div>
         </div>
       </div>
-
     
       {/* RATES */}
       <div className="w-full py-20 flex gap-10 items-center flex-col justify-center bg-gradient-to-b from-blue-500 to-blue-200/10 opacity-80">
         <p className="text-white text-2xl font-bold w-full max-w-[1200px] text-center">Current rate: <span>0.42</span></p>
         <button className="bg-primary text-white px-8 py-2 font-semibold rounded-sm uppercase hover:bg-primary/80 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg">Pay Turkish Suppliers $1000</button>
       </div>
-
 
       <Footer />
     </div>
