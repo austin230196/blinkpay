@@ -5,7 +5,7 @@ export default function Nav(){
         <div className="flex w-full sticky top-0 bg-white shadow-md z-50 items-center justify-between">
             <div className="flex items-center justify-between max-w-[1200px] lg:px-0 px-6 w-full mx-auto py-4 border-b border-gray-200">
                 <Link href="/" className="flex flex-col">
-                    <p className="text-3xl font-extrabold">BlinkPay</p>
+                    <p className="text-3xl font-extrabold text-[#808080]">BlinkPay</p>
                     <small className="text-xs uppercase font-mono">fast.safe.reliable</small>
                 </Link>
 
