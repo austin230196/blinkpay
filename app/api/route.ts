@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 
 
-export async function GET(req: NextRequest, res: NextResponse) {
+export async function GET(req: NextRequest) {
     try{
         //read the data from the file
         let filepath = path.join("data.json");
@@ -34,7 +34,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
 }
 
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
     const { turkishRate, chineseRate } = await req.json();
     console.log({turkishRate, chineseRate});
     let filepath = path.join("data.json");
